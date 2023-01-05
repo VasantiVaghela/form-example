@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+</head>
+<body>
+    <h2>Information</h2>
+    <form action="formdata.html" method="GET" enctype="multipart/form-data" onsubmit="window.open('formdata.html', '_blank');">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="username" placeholder="username" required>
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="password" required>
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="email" required>
+        </div>
+
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="18" max="30" step="1">
+        </div>
+
+        <div>
+            <label for="birdate">Birthday:</label>
+            <input type="date" id="birthdate" name="birthdate" min="2015-01-01">
+        </div>
+        <div>
+            <h3>Hobbies</h3>
+            <div>
+                <label for="reading">Reading</label>
+                <input type="checkbox" id="reading" name="reading">
+            </div>
+            <div>
+                <label for="travelling">travelling</label>
+                <input type="checkbox" id="travelling" name="travelling">
+            </div>
+            <div>
+                <label for="football">Football</label>
+                <input type="checkbox" id="football" name="football">
+            </div>
+        </div>
+
+        <div>
+            <h3>Gender</h3>
+            <div>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male">
+            </div>
+            <div>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female">
+            </div>
+        </div>
+        <input type="hidden" name="hidden" value="secret">
+        <div>
+            <label for="eyeColor">Eye Color:</label>
+            <select name="eyeColor" id="eyeColor">
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option label="Brown" value="brown"></option>
+            </select>
+        </div>
+        <div>
+            <label for="bio">Bio:</label>
+            <textarea name="bio" id="bio">My name is Vasanti</textarea>
+        </div>
+        <div>
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone">
+        </div>
+        <div>
+            <label for="url">URL</label>
+            <input type="url" name="url" id="url">
+        </div>
+        <div>
+            <label for="file">File:</label>
+            <input type="file" name="file" id="file">
+        </div>
+        <div>
+            <label for="color">Color:</label>
+            <input type="color" name="color" id="color">
+        </div>
+        <br>
+        <div>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit" >
+        </div>
+    </form>
+
+</body>
+</html>
